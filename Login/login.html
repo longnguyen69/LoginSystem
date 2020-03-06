@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script>
+        function isLog() {
+            let inputName = document.getElementById("input").value;
+            let inputPass = document.getElementById("pass").value;
+            if (inputName == "admin") {
+                alert("moi ban nhap pass");
+            } else if (inputName == ""){
+                alert("canceld")
+            }
+            else {
+                alert("I don’t know you");
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" id="Login" value="LOGIN" onclick="isLog()">
+</body>
+</html>

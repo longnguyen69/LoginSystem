@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" id="input"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" id="pass"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" id="result" value="Login" onclick="isLog()"></td>
+        </tr>
+    </table>
+<script>
+    function isLog() {
+        let inputName = document.getElementById("input").value;
+        let inputPass = document.getElementById("pass").value;
+     /*  if (inputName == "admin" && inputPass == "TheMaster") {
+        alert("Welcome");
+       } else {
+            alert("I don’t know you");
+        }*/
+     if (inputName == "admin") {
+         alert("moi ban nhap pass");
+     } else if (inputName == ""){
+         alert("canceld")
+     }
+     else {
+         alert("I don’t know you");
+     }
+
+    if (inputPass == "TheMaster"){
+        alert("Welcome");
+    } else if (inputPass == "" ){
+        alert("Canceled");
+    } else {
+        alert("Wrong password");
+    }
+    }
+</script>
+</body>
+</html>
